@@ -135,7 +135,7 @@ def delete_drink(jwt,id):
             drink.delete()
             return jsonify({
                 'success':True,
-                'delete'id
+                'delete':id
             })
         except:
             abort(422)
